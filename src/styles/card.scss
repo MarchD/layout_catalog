@@ -1,0 +1,76 @@
+.card {
+  @include border($gray);
+  width: 200px;
+  border-radius: 5px;
+  transition: box-shadow 0.2s;
+
+  &:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    padding: 14px 14px 15px; //test
+  }
+
+  &__image {
+    margin-top: 13px;
+    width: 160px;
+    height: 134px;
+  }
+
+  &__image-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 42px;
+
+    border: 3px solid transparent;
+    transition: transform 1s linear;
+
+    &:hover {
+      transform: scale(1.2);
+      border-color: $gray;
+    }
+  }
+
+  &__title {
+    @include medium-fonts();
+    color: $black;
+    margin-bottom: 5px;
+  }
+
+  &__article {
+    @include small-fonts();
+    margin-bottom: 15px;
+  }
+
+  &__assesment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    vertical-align: bottom;
+  }
+
+  &__reviews {
+    @include small-fonts();
+    color: $black;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__price-text {
+    display: flex;
+    align-self: center;
+    @include small-fonts();
+  }
+
+  &__price-cost {
+    @include large-fonts(16px, 19px);
+  }
+}
