@@ -1,7 +1,6 @@
 .card {
   @include border($gray);
   width: 200px;
-  padding: 30px 14px 15px;
   border-radius: 5px;
   transition: box-shadow 0.2s;
 
@@ -12,12 +11,27 @@
   &__inner {
     display: flex;
     flex-direction: column;
+    padding: 14px 14px 15px; //test
   }
 
   &__image {
-    margin: 0 auto 45px;
-    height: 134px;
+    margin-top: 13px;
     width: 160px;
+    height: 134px;
+  }
+
+  &__image-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 42px;
+
+    border: 3px solid transparent;
+    transition: transform 1s linear;
+
+    &:hover {
+      transform: scale(1.2);
+      border-color: $gray;
+    }
   }
 
   &__title {

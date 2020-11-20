@@ -8,7 +8,9 @@
   height: 40px;
   border-radius: 5px;
   background-color: $blue;
-  transition: color 0.5s, background-color 0.5s, border-color 1s;
+  transition: color 0.5s linear,
+    background-color 0.5s linear,
+    border-color 1s linear;
   cursor: pointer;
 
   &:hover {
