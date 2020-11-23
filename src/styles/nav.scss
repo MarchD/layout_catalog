@@ -2,11 +2,12 @@
 
 .nav {
   &__list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(8, auto);
   }
 
   &__item {
-    display: flex;
+    justify-items: center;
     position: relative;
     margin: 0 10px;
 

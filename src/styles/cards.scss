@@ -1,15 +1,9 @@
-
 .cards {
-  display: flex;
+  display: grid;
+  margin-right: auto;
+  margin-left: auto;
+  grid-template-columns: repeat(auto-fit, 200px );
   justify-content: center;
-
-  &__inner {
-    @include flex-center();
-    flex-wrap: wrap;
-    width: 1024px;
-  }
-
-  &__card {
-    margin: 0 24px 50px;
-  }
+  gap: 48px 50px;
+  width: 1024px;
 }
