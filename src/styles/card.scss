@@ -10,7 +10,7 @@
   &__inner {
     display: flex;
     flex-direction: column;
-    padding: 14px 14px 15px; //test
+    padding: 14px 16px 15px;
   }
 
   &__image {
@@ -25,7 +25,7 @@
     margin-bottom: 42px;
 
     border: 3px solid transparent;
-    transition: transform 1s linear;
+    transition: transform 0.5s linear;
 
     &:hover {
       transform: scale(1.2);
