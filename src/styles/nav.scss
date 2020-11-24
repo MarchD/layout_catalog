@@ -3,23 +3,14 @@
 .nav {
   &__list {
     display: grid;
+    gap: 20px;
     grid-template-columns: repeat(8, auto);
   }
 
   &__item {
     justify-items: center;
     position: relative;
-    margin: 0 10px;
-
     align-items: center;
-
-    &:first-child {
-      margin-left: 0;
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
 
   &__link {
@@ -32,14 +23,6 @@
     height: 60px;
     line-height: 60px;
     transition: color 0.2s linear;
-
-    &:first-child {
-      margin-left: 0;
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
 
     &:hover {
       color: $blue;
