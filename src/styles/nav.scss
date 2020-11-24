@@ -2,43 +2,28 @@
 
 .nav {
   &__list {
-    display: flex;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(8, auto);
   }
 
   &__item {
-    display: flex;
+    justify-items: center;
     position: relative;
-    margin: 0 10px;
-
     align-items: center;
-
-    &:first-child {
-      margin-left: 0;
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
 
   &__link {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     text-decoration: none;
     text-transform: uppercase;
+    text-align: center;
     color: $black;
     font-weight: 500;
     font-size: 12px;
     height: 60px;
-    line-height: 60px;
     transition: color 0.2s linear;
-
-    &:first-child {
-      margin-left: 0;
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
 
     &:hover {
       color: $blue;
