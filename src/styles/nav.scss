@@ -14,14 +14,15 @@
   }
 
   &__link {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     text-decoration: none;
     text-transform: uppercase;
+    text-align: center;
     color: $black;
     font-weight: 500;
     font-size: 12px;
     height: 60px;
-    line-height: 60px;
     transition: color 0.2s linear;
 
     &:hover {
