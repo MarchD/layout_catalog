@@ -2,8 +2,8 @@
   display: grid;
   margin-right: auto;
   margin-left: auto;
-  grid-template-columns: repeat(auto-fit, 200px );
+  grid-template-columns: repeat(auto-fill, 200px );
   justify-content: center;
   gap: 48px 50px;
-  width: 1024px;
+  max-width: 1024px;
 }
